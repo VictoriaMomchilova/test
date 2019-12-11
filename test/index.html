@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ice Cream</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div>
+				<p>500 Terry Francois Street San Francisco, CA 94158  |  Daily 10AM-10PM</p>
+			</div>
+			<div class="main-menu">
+				<div class="menu">
+					<a class="active-a" href="index.html">Home</a>
+					<a href="#flavors">FLAVORS</a>
+					<a href="index-events.html">EVENTS</a>
+					<a href="index-menu.html">Shop</a>
+					<a href="index-about.html">About</a>
+				</div>
+				<div class="social-buttons">
+					<div class="log-in">
+						<a href="#Log">
+							<span>Log in</span>
+							<img src="img/profile-user-button.png">
+						</a>
+						<div class="log-cont">
+							<form>
+								<input type="text" name="" value="Username/Email">
+								<input type="password" name="" value ="password">
+								<p>Not a member?<a href="">Sign Up</a></p><button>Log in</button>
+							</form>
+						</div>
+					</div>
+					<a href="#"><img src="img/facebook-logo-button.png"></a>
+					<a href="#"><img src="img/twitter-logo-button.png"></a>
+					<a href="#"><img src="img/instagram-logo-button.png"></a>
+					<div class="truck-box" >
+						<button type="button" data-toggle="modal" data-target="#myModal">
+							<span>My truck</span>
+							<img src="img/ice-cream-truck2.png">
+							<span class="total-count"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  <div class="modal-dialog truck-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Shopping cart</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="cart">
+					<input id="promo-code" class="col-md-4" type="text" name="promo" placeholder="Enter your promo code here">
+					<span class="cart-total">0$</span>
+					<div class="cart-list-box">
+						<ol class="cart-list row product-row">
+							
+						</ol>
+					</div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-default clear-cart" data-dismiss="modal">Clear</button>
+	        <button type="button" class="btn btn-order">Order now</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="slider">
+		<div class="container">
+			<div class="head-logo"><img src="img/Davisons-logo.png"></div>
+			<div class="ice-creams">
+				<img class="ice-cream" src="img/ice-cream1.png">
+				<!-- <img class="ice-cream" src="img/ice-cream2.png">
+				<img class="ice-cream" src="img/ice-cream3.png">
+				<img class="ice-cream" src="img/ice-cream4.png"> -->
+			</div>
+			<div class="txt-cont">
+				<h3>HAND CRAFTED</h3>
+				<!-- <h1>ICE CREAM</h1> -->
+				<svg id="txt-anime" width="816" height="103" viewBox="0 0 816 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M5 6.29167H21.6769V96.7083H5V6.29167Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+					<path d="M97.7924 98C88.727 98 80.5168 96.0194 73.1619 92.0583C65.8925 88.0111 60.1624 82.4569 55.9718 75.3958C51.8668 68.3347 49.8142 60.3694 49.8142 51.5C49.8142 42.6306 51.9095 34.6653 56.1001 27.6042C60.2907 20.5431 66.0207 15.0319 73.2902 11.0708C80.6451 7.02361 88.8553 5 97.9207 5C105.276 5 111.989 6.29167 118.061 8.87501C124.133 11.4583 129.265 15.2042 133.455 20.1125L122.68 30.3167C116.18 23.2556 108.183 19.725 98.6904 19.725C92.5328 19.725 87.0166 21.1028 82.1418 23.8583C77.267 26.5278 73.4612 30.2736 70.7245 35.0958C67.9878 39.9181 66.6194 45.3861 66.6194 51.5C66.6194 57.6139 67.9878 63.0819 70.7245 67.9042C73.4612 72.7264 77.267 76.5153 82.1418 79.2708C87.0166 81.9403 92.5328 83.275 98.6904 83.275C108.183 83.275 116.18 79.7014 122.68 72.5542L133.455 82.8875C129.265 87.7958 124.091 91.5417 117.933 94.125C111.861 96.7083 105.147 98 97.7924 98Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+					<path d="M227.047 82.6292V96.7083H159.697V6.29167H225.251V20.3708H176.374V43.8792H219.734V57.7H176.374V82.6292H227.047Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+					<path d="M343.181 98C334.115 98 325.905 96.0194 318.55 92.0583C311.281 88.0111 305.551 82.4569 301.36 75.3958C297.255 68.3347 295.202 60.3694 295.202 51.5C295.202 42.6306 297.298 34.6653 301.488 27.6042C305.679 20.5431 311.409 15.0319 318.678 11.0708C326.033 7.02361 334.244 5 343.309 5C350.664 5 357.377 6.29167 363.449 8.87501C369.522 11.4583 374.653 15.2042 378.844 20.1125L368.068 30.3167C361.568 23.2556 353.572 19.725 344.079 19.725C337.921 19.725 332.405 21.1028 327.53 23.8583C322.655 26.5278 318.849 30.2736 316.113 35.0958C313.376 39.9181 312.008 45.3861 312.008 51.5C312.008 57.6139 313.376 63.0819 316.113 67.9042C318.849 72.7264 322.655 76.5153 327.53 79.2708C332.405 81.9403 337.921 83.275 344.079 83.275C353.572 83.275 361.568 79.7014 368.068 72.5542L378.844 82.8875C374.653 87.7958 369.479 91.5417 363.321 94.125C357.249 96.7083 350.536 98 343.181 98Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+					<path d="M463.84 96.7083L445.495 70.2292C444.725 70.3153 443.571 70.3583 442.031 70.3583H421.763V96.7083H405.086V6.29167H442.031C449.814 6.29167 456.57 7.58333 462.3 10.1667C468.116 12.75 472.563 16.4528 475.642 21.275C478.721 26.0972 480.26 31.8236 480.26 38.4542C480.26 45.2569 478.592 51.1125 475.257 56.0208C472.007 60.9292 467.303 64.5889 461.146 67L481.799 96.7083H463.84ZM463.455 38.4542C463.455 32.6847 461.573 28.25 457.81 25.15C454.047 22.05 448.531 20.5 441.262 20.5H421.763V56.5375H441.262C448.531 56.5375 454.047 54.9875 457.81 51.8875C461.573 48.7014 463.455 44.2236 463.455 38.4542Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+					<path d="M576.53 82.6292V96.7083H509.181V6.29167H574.734V20.3708H525.858V43.8792H569.218V57.7H525.858V82.6292H576.53Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+					<path d="M663.625 75.7833H618.726L609.874 96.7083H592.684L633.093 6.29167H649.514L690.051 96.7083H672.605L663.625 75.7833ZM658.109 62.6083L641.175 23.0833L624.37 62.6083H658.109Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+					<path d="M794.221 96.7083L794.093 36.775L764.588 86.375H757.147L727.642 37.55V96.7083H711.734V6.29167H725.461L761.124 66.225L796.145 6.29167H809.872L810 96.7083H794.221Z" stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+				</svg>
+				<a href="index-menu.html"><button>MENU</button></a>
+			</div>
+		</div>
+	</div>
+	<div id="flavors" class="flavors">
+		<img src="img/ice-cream-img1.jpg">
+		<div class="sect-cont">
+			<div class="cont-txt">
+				<h3>OUR FLAVORS</h3>
+				<h4>Fresh n' Tasty!</h4>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+				<button>MENU</button>
+			</div>
+		</div>
+	</div>
+	<div class="empty-cont1">
+		<div class="container">
+			<div class="txt-cont">
+				<h3>ENJOY</h3>
+				<h1>DAIRY FREE</h1>
+				<button>MENU</button>
+			</div>	
+		</div>
+	</div>
+	<div id="desserts" class="desserts">
+		<img src="img/ice-cream-img2.jpg">
+		<div class="sect-cont">
+			<div class="cont-txt">
+				<h3>DESSERTS</h3>
+				<h4>Ice cream goodies</h4>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+				<button>MENU</button>
+			</div>
+		</div>
+	</div>
+	<div class="empty-cont2">
+		<div class="container">
+			<div class="txt-cont">
+				<h3>CATERING & MORE</h3>
+				<h1>EVENTS</h1>
+				<button>MAKE A WISH</button>
+			</div>	
+		</div>
+	</div>
+	<div id="place" class="place">
+		<img src="img/place.jpg">
+		<div class="sect-cont">
+			<div class="cont-txt">
+				<h3>OUR PLACE</h3>
+				<h4>Ice cream by the sea</h4>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+				<button>Contact us</button>
+			</div>
+		</div>
+	</div>
+	<div class="empty-cont3">
+			<div class="txt-cont">
+				<div class="balls">
+					<img class="ball1" src="img/ball1.png">
+					<img class="ball2" src="img/ball2.png">
+					<img class="ball3" src="img/ball3.png">
+					<img class="ball4" src="img/ball4.png">
+				</div>
+			</div>		
+	</div>
+	<div class="photo-lab">
+		<div class="tags"><p>#DOUBLE TAP</p></div>
+		<div class="photos">
+			<div class="photo">
+				<img src="img/photo1.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">26</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo2.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">8</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo3.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">34</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo4.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">11</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo5.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">50</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo6.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">3</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="help-conv">
+		<img src="img/conv-bubble.png">
+		<div class="chat-box">
+			<div class="chat-win">
+				<p class="QS">Davison's: How can I help?</p>
+			</div>
+			<div class="chat-user">
+				<span>Type your question:</span>
+				<input class="user-txt" type="text" name="">
+				<input class="enter" type="image" src="img/back-arrow.png" name="image" alt="submit">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-tb">
+				<div class="box1">
+					<h5>Address</h5>
+					<p>500 Terry Francois St.<br>San Francisco,<br>CA 94158</p>
+				</div>
+				<div class="box2">
+					<h5>Contact</h5>
+					<p>info@mysite.com<br>Tel: 123-456-7890</p>
+				</div>
+				<div class="box3">
+					<h5>Hours</h5>
+					<p>OPEN DAILY<br>10AM-8PM</p>
+				</div>
+				<div class="box4">
+					<h5>Mailing list</h5>
+					<form>
+						<input type="email" name="" value="Enter your email here*">
+						<button>Submit</button>
+					</form>
+				</div>
+				<div class="box5">
+					<p>Created by Victoria Momchilova</p>
+				</div>
+				<div class="box6">
+					<div class="foot-social">
+						<a href="#"><img src="img/facebook-logo-button-wh.png"></a>
+						<a href="#"><img src="img/twitter-logo-button-wh.png"></a>
+						<a href="#"><img src="img/instagram-logo-button-wh.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+</body>
+</html>

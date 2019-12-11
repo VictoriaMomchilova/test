@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ice Cream</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div>
+				<p>500 Terry Francois Street San Francisco, CA 94158  |  Daily 10AM-10PM</p>
+			</div>
+			<div class="main-menu">
+				<div class="menu">
+					<a href="index.html">Home</a>
+					<a href="#flavors">FLAVORS</a>
+					<a href="index-events.html">EVENTS</a>
+					<a href="index-menu.html">Shop</a>
+					<a class="active-a" chref="index-about.html">About</a>
+				</div>
+				<div class="social-buttons">
+					<div class="log-in">
+						<a href="#Log">
+							<span>Log in</span>
+							<img src="img/profile-user-button.png">
+						</a>
+						<div class="log-cont">
+							<form>
+								<input type="text" name="" value="Username/Email">
+								<input type="password" name="" value ="password">
+								<p>Not a member?<a href="">Sign Up</a></p><button>Log in</button>
+							</form>
+						</div>
+					</div>
+					<a href="#"><img src="img/facebook-logo-button.png"></a>
+					<a href="#"><img src="img/twitter-logo-button.png"></a>
+					<a href="#"><img src="img/instagram-logo-button.png"></a>
+					<div class="truck-box" >
+						<button type="button" data-toggle="modal" data-target="#myModal">
+							<span>My truck</span>
+							<img src="img/ice-cream-truck2.png">
+							<span class="total-count"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  <div class="modal-dialog truck-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Shopping cart</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="cart">
+					<input id="promo-code" class="col-md-4" type="text" name="promo" placeholder="Enter your promo code here">
+					<span class="cart-total">0$</span>
+					<div class="cart-list-box">
+						<ol class="cart-list row product-row">
+							
+						</ol>
+					</div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-default clear-cart" data-dismiss="modal">Clear</button>
+	        <button type="button" class="btn btn-order">Order now</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="about-txt">
+		<div class="container">
+			<div class="head-logo"><img src="img/Davisons-logo.png"></div>
+			<div class="txt-cont">
+				<h3>A LITTLE STORY</h3>
+				<h4>We just love ice cream!</h4>
+				<p>More than 80 years ago, a Sioux City man submitted a name and a character to a “Name that Ice Cream” contest after noticing how much his son enjoyed the blue bunnies in a department store window.</p>
+				<p class="delay1">And so, Davison's was born.</p>
+				<p class="delay2">We’re firm believers that a happier day is just a spoonful away—a spoonful of ice cream, that is. And for us, making the best ice cream means starting with the best ingredients,like fresh, local milk sourced near our production facilities so you can expect farm-to-freezer taste in every bite.</p>
+				<p class="delay3">These high-quality ingredients go into every single one of our more than 70 delicious, unique flavors. That’s a lot of ways to get your ice cream on. And thanks to our new see-thru packaging, you can feast your eyes on those tasty ingredients before they even hit your tastebuds.</p>
+				<p class="delay4">So whether you spoon it, scoop it, or cone it—it doesn’t matter to us! All that matters is that you have fun with our ice cream. Find your flavor with Davison's. It’s So Hoppin’ Good.</p>
+			</div>
+		</div>
+	</div>
+	<div class="newsletter">
+		<img src="img/ice-cream-img3.jpg">
+		<div class="sect-cont">
+			<div class="cont-txt">
+				<form>
+					<h3>Join the iScream Team email newsletter. You'll get a coupon immediately when you join!</h3>
+					<div class="form-field-half">
+						<label for="First-name">First name</label>
+						<input type="text" name="First-name">
+					</div>
+					<div class="form-field-half">
+						<label for="Last-name">Last name</label>
+						<input type="text" name="Last-name">
+					</div>
+					<div class="form-field">					
+						<label for="email">Email</label>
+						<input type="email" name="email">
+					</div>
+					<div class="form-field">
+						<label class="label-head">Birth date</label>
+						<select class="month">
+							<option>Month</option>
+							<option>January</option>
+							<option>February</option>
+							<option>March</option>
+							<option>April</option>
+							<option>May</option>
+							<option>Juny</option>
+							<option>Juky</option>
+							<option>August</option>
+							<option>Setember</option>
+							<option>Octomber</option>
+							<option>November</option>
+							<option>December</option>
+						</select>
+						<select class="day">
+							<option>Day</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+						<select class="year">
+							<option>Year</option>
+							<option>1988</option>
+							<option>1989</option>
+							<option>1990</option>
+							<option>1991</option>
+							<option>1992</option>
+							<option>1993</option>
+							<option>1994</option>
+							<option>1995</option>
+							<option>1996</option>
+							<option>1997</option>
+							<option>1998</option>
+							<option>1999</option>
+							<option>2000</option>
+							<option>2001</option>
+							<option>2002</option>
+							<option>2003</option>
+							<option>2004</option>
+							<option>2005</option>
+							<option>2006</option>
+							<option>2007</option>
+							<option>2008</option>
+							<option>2009</option>
+							<option>2010</option>
+							<option>2011</option>
+							<option>2012</option>
+							<option>2013</option>
+							<option>2014</option>
+							<option>2015</option>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+						</select>
+					</div>
+					<button>Join us</button>
+					<p>Terms and Conditions</p>
+					<p>You must be 18 years of age or older to register for the iScream Team or any sweepstakes that require membership in the iScream Team.</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="empty-cont4">
+		<div class="container">
+			<div class="txt-cont">
+				<h3>YOU ARE</h3>
+				<h1>WELLCOME</h1>
+			</div>
+		</div>
+	</div>
+	<div class="factory">
+		<div class="myplace">
+			<img src="img/myplace2.jpg">
+			
+		</div>
+		<div class="mapouter">
+			<div class="gmap_canvas">
+				<iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Sofia%20bul.%20vitosha%2014&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				<a href="https://www.embedgooglemap.net/blog/best-vpn/">the best vpn services for 2019</a>
+			</div>
+		</div>
+		<div class="sect-cont">
+			<div class="cont-txt">
+				<h3>OUR LITTLE FACTORY</h3>
+				<h4>It's what's on the inside that counts</h4>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+				<p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+				<button>Contact us</button>
+
+			</div>
+		</div>
+	</div>
+	<div class="photo-lab">
+		<div class="tags"><p>#DOUBLE TAP</p></div>
+		<div class="photos">
+			<div class="photo">
+				<img src="img/photo1.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">26</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo2.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">8</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo3.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">34</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo4.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">11</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo5.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">50</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo6.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">3</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="help-conv">
+		<img src="img/conv-bubble.png">
+		<div class="chat-box">
+			<div class="chat-win">
+				<p class="QS">Davison's: How can I help?</p>
+			</div>
+			<div class="chat-user">
+				<span>Type your question:</span>
+				<input class="user-txt" type="text" name="">
+				<input class="enter" type="image" src="img/back-arrow.png" name="image" alt="submit">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-tb">
+				<div class="box1">
+					<h5>Address</h5>
+					<p>500 Terry Francois St.<br>San Francisco,<br>CA 94158</p>
+				</div>
+				<div class="box2">
+					<h5>Contact</h5>
+					<p>info@mysite.com<br>Tel: 123-456-7890</p>
+				</div>
+				<div class="box3">
+					<h5>Hours</h5>
+					<p>OPEN DAILY<br>10AM-8PM</p>
+				</div>
+				<div class="box4">
+					<h5>Mailing list</h5>
+					<form>
+						<input type="email" name="" value="Enter your email here*">
+						<button>Submit</button>
+					</form>
+				</div>
+				<div class="box5">
+					<p>Created by Victoria Momchilova</p>
+				</div>
+				<div class="box6">
+					<div class="foot-social">
+						<a href="#"><img src="img/facebook-logo-button-wh.png"></a>
+						<a href="#"><img src="img/twitter-logo-button-wh.png"></a>
+						<a href="#"><img src="img/instagram-logo-button-wh.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+</body>
+</html>

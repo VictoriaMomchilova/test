@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ice Cream</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div>
+				<p>500 Terry Francois Street San Francisco, CA 94158  |  Daily 10AM-10PM</p>
+			</div>
+			<div class="main-menu">
+				<div class="menu">
+					<a href="index.html">Home</a>
+					<a href="#flavors">FLAVORS</a>
+					<a class="active-a" href="index-events.html">EVENTS</a>
+					<a href="index-menu.html">Shop</a>
+					<a href="index-about.html">About</a>
+				</div>
+				<div class="social-buttons">
+					<div class="log-in">
+						<a href="#Log">
+							<span>Log in</span>
+							<img src="img/profile-user-button.png">
+						</a>
+						<div class="log-cont">
+							<form>
+								<input type="text" name="" value="Username/Email">
+								<input type="password" name="" value ="password">
+								<p>Not a member?<a href="">Sign Up</a></p><button>Log in</button>
+							</form>
+						</div>
+					</div>
+					<a href="#"><img src="img/facebook-logo-button.png"></a>
+					<a href="#"><img src="img/twitter-logo-button.png"></a>
+					<a href="#"><img src="img/instagram-logo-button.png"></a>
+					<div class="truck-box" >
+						<button type="button" data-toggle="modal" data-target="#myModal">
+							<span>My truck</span>
+							<img src="img/ice-cream-truck2.png">
+							<span class="total-count"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  <div class="modal-dialog truck-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Shopping cart</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="cart">
+					<input id="promo-code" class="col-md-4" type="text" name="promo" placeholder="Enter your promo code here">
+					<span class="cart-total">0$</span>
+					<div class="cart-list-box">
+						<ol class="cart-list row product-row">
+							
+						</ol>
+					</div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-default clear-cart" data-dismiss="modal">Clear</button>
+	        <button type="button" class="btn btn-order">Order now</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="event-txt">
+		<div class="container">
+			<div class="head-logo"><img src="img/Davisons-logo.png"></div>
+			<div class="txt-cont">
+				<h3>THE BEST ICE CREAM</h3>
+				<h4>For the best party!</h4>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p>
+				<div class="event-sections">
+					<div class="event-section1">
+						<div class="event-photo"><img src="img/events/event-birthday1.jpg"></div>
+						<h5>Birthday</h5>
+						<p class="event-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy.</p>
+						<div class="shadow"></div>
+					</div>
+					<div class="event-section1">
+						<div class="event-photo"><img src="img/events/party1.jpg"></div>
+						<h5>Alissa</h5>
+						<p class="event-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy.</p>
+						<div class="shadow"></div>
+					</div>
+					<div class="event-section1">
+						<div class="event-photo"><img src="img/events/st-valentine.jpg"></div>
+						<h5>St. Valentine</h5>
+						<p class="event-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy.</p>
+						<div class="shadow"></div>
+					</div>
+					<div class="event-section1">
+						<div class="event-photo"><img src="img/events/Selfie-Museum10.jpg"></div>
+						<h5>8th March</h5>
+						<p class="event-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy.</p>
+						<div class="shadow"></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="newsletter">
+		<img src="img/events/Ice-Cream-blog-hearder.png">
+		<div class="sect-cont">
+			<div class="cont-txt">
+				<form>
+					<h3>Hurry up! Make a date of the COOLest Party!</h3>
+					<div class="form-field-half">
+						<label for="First-name">First name</label>
+						<input type="text" name="First-name">
+					</div>
+					<div class="form-field-half">
+						<label for="Last-name">Last name</label>
+						<input type="text" name="Last-name">
+					</div>
+					<div class="form-field">					
+						<label for="email">Email</label>
+						<input type="email" name="email">
+					</div>
+					<div class="form-field-half">
+						<label for="Choose-date">Choose date</label>
+						<input type="date" name="Choose-date">
+					</div>
+					<div class="form-field-quarter">
+						<label for="Start-time">Start time</label>
+						<input type="time" name="Start-time">
+					</div>
+					<div class="form-field-quarter">
+						<label for="End-time">End time</label>
+						<input type="time" name="End-time">
+					</div>
+					<button>Book now</button>
+					<p>Terms and Conditions</p>
+					<p>You must be 18 years of age or older to register for the iScream Team or any sweepstakes that require membership in the iScream Team.</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="empty-cont5">
+		<div class="container">
+			<div class="txt-cont">
+				<!-- <h3>HEY YOU!</h3>
+				<h1>LET'S PARTY</h1> -->
+			</div>	
+		</div>
+	</div>
+	<div class="photo-lab">
+		<div class="tags"><p>#DOUBLE TAP</p></div>
+		<div class="photos">
+			<div class="photo">
+				<img src="img/photo1.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">26</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo2.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">8</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo3.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">34</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo4.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">11</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo5.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">50</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo6.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">3</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="help-conv">
+		<img src="img/conv-bubble.png">
+		<div class="chat-box">
+			<div class="chat-win">
+				<p class="QS">Davison's: How can I help?</p>
+			</div>
+			<div class="chat-user">
+				<span>Type your question:</span>
+				<input class="user-txt" type="text" name="">
+				<input class="enter" type="image" src="img/back-arrow.png" name="image" alt="submit">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-tb">
+				<div class="box1">
+					<h5>Address</h5>
+					<p>500 Terry Francois St.<br>San Francisco,<br>CA 94158</p>
+				</div>
+				<div class="box2">
+					<h5>Contact</h5>
+					<p>info@mysite.com<br>Tel: 123-456-7890</p>
+				</div>
+				<div class="box3">
+					<h5>Hours</h5>
+					<p>OPEN DAILY<br>10AM-8PM</p>
+				</div>
+				<div class="box4">
+					<h5>Mailing list</h5>
+					<form>
+						<input type="email" name="" value="Enter your email here*">
+						<button>Submit</button>
+					</form>
+				</div>
+				<div class="box5">
+					<p>Created by Victoria Momchilova</p>
+				</div>
+				<div class="box6">
+					<div class="foot-social">
+						<a href="#"><img src="img/facebook-logo-button-wh.png"></a>
+						<a href="#"><img src="img/twitter-logo-button-wh.png"></a>
+						<a href="#"><img src="img/instagram-logo-button-wh.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+</body>
+</html>

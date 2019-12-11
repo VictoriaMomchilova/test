@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ice Cream</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/shape/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/shape/demo.css">
+	<link rel="stylesheet" type="text/css" href="css/shape/component.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="">
+				<p>500 Terry Francois Street San Francisco, CA 94158  |  Daily 10AM-10PM</p>
+			</div>
+			<div class="main-menu">
+				<div class="menu">
+					<a href="index.html">Home</a>
+					<a href="#flavors">FLAVORS</a>
+					<a href="index-events.html">EVENTS</a>
+					<a class="active-a" href="index-menu.html">Shop</a>
+					<a href="index-about.html">About</a>
+				</div>
+				<div class="social-buttons">
+					<div class="log-in">
+						<a href="#Log">
+							<span>Log in</span>
+							<img src="img/profile-user-button.png">
+						</a>
+						<div class="log-cont">
+							<form>
+								<input type="text" name="" value="Username/Email">
+								<input type="password" name="" value ="password">
+								<p>Not a member?<a href="">Sign Up</a></p><button>Log in</button>
+							</form>
+						</div>
+					</div>
+					<a href="#"><img src="img/facebook-logo-button.png"></a>
+					<a href="#"><img src="img/twitter-logo-button.png"></a>
+					<a href="#"><img src="img/instagram-logo-button.png"></a>
+					<div class="truck-box" >
+						<button type="button" data-toggle="modal" data-target="#myModal">
+							<span>My truck</span>
+							<img src="img/ice-cream-truck2.png">
+							<span class="total-count"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  <div class="modal-dialog truck-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Shopping cart</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="cart">
+					<input id="promo-code" class="col-md-4" type="text" name="promo" placeholder="Enter your promo code here">
+					<span class="cart-total">0$</span>
+					<div class="cart-list-box">
+						<ol class="cart-list row product-row">
+							
+						</ol>
+					</div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-default clear-cart" data-dismiss="modal">Clear</button>
+	        <button type="button" class="btn btn-order">Order now</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="fav-menu">
+		<div class="head-logo"><img src="img/Davisons-logo.png"></div>
+		<div class="container">
+			<div class="filters">
+				<div class="filters-selects">
+					<div class="custom-select" style="width:140px;">
+						<select>
+							<option value="0">Flavors</option>
+							<option value="1">Lorem ipsum</option>
+							<option value="2">Lorem ipsum</option>
+							<option value="3">Lorem ipsum</option>
+							<option value="4">Lorem ipsum</option>
+							<option value="5">Lorem ipsum</option>
+							<option value="6">Lorem ipsum</option>
+							<option value="7">Lorem ipsum</option>
+							<option value="8">Lorem ipsum</option>
+							<option value="9">Lorem ipsum</option>
+							<option value="10">Lorem ipsum</option>
+							<option value="11">Lorem ipsum</option>
+							<option value="12">Lorem ipsum</option>
+						</select>
+					</div>
+					<div class="custom-select" style="width:140px;">
+						<select>
+							<option value="0">New Products</option>
+							<option value="1">Lorem ipsum</option>
+							<option value="2">Lorem ipsum</option>
+							<option value="3">Lorem ipsum</option>
+							<option value="4">Lorem ipsum</option>
+							<option value="5">Lorem ipsum</option>
+							<option value="6">Lorem ipsum</option>
+							<option value="7">Lorem ipsum</option>
+							<option value="8">Lorem ipsum</option>
+							<option value="9">Lorem ipsum</option>
+							<option value="10">Lorem ipsum</option>
+							<option value="11">Lorem ipsum</option>
+							<option value="12">Lorem ipsum</option>
+						</select>
+					</div>
+				</div>
+				<div class="filters-icons">
+					<button><img src="img/select1.png"></button>
+					<button><img src="img/select2.png"></button>
+					<button><img src="img/select4.png"></button>
+					<button><img src="img/select3.png"></button>
+					<button><img src="img/select5.png"></button>
+				</div>
+
+			</div>
+			<div class="container-grid">
+				<!-- <div class="cart">
+					<h2>Shopping cart</h2>
+					<input id="promo-code" type="text" name="promo" placeholder="Enter your promo code here">
+					<span class="cart-total">0$</span>
+					<ol class="cart-list">
+						
+					</ol>
+				</div> -->
+				<div class="favs">	
+					<section id="grid" class="grid clearfix">
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/2.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Lakeland Cream</h2>
+									<p>Soko radicchio bunya nuts gram dulse.</p>
+									<span>34</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/4.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Madagascan Vanilla</h2>
+									<p>Two greens tigernut soybean radish artichoke.</p>
+									<span>13</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/6.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Birthday Cake</h2>
+									<p>Beetroot water spinach okra water chestnut.</p>
+									<span>25</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/8.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>My Ex's Soul</h2>
+									<p>Water spinach arugula pea tatsoi.</p>
+									<span>44</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/3.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Strawberry Milkshake</h2>
+									<p>Pea horseradish azuki bean lettuce.</p>
+									<span>26</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/1.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Cookie Dough</h2>
+									<p>A grape silver beet watercress potato.</p>
+									<span>19</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/5.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Salted Caramel</h2>
+									<p>Chickweed okra pea winter purslane.</p>
+									<span>32</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/7.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Chocolate Indulgence</h2>
+									<p>Salsify taro catsear garlic gram.</p>
+									<span>26</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/9.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Candy Crush</h2>
+									<p>Salsify taro catsear garlic gram.</p>
+									<span>29</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/10.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Minnie Mouse</h2>
+									<p>Salsify taro catsear garlic gram.</p>
+									<span>14</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/11.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Bunny Hole</h2>
+									<p>Salsify taro catsear garlic gram.</p>
+									<span>25</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+							<figure>
+								<img src="img/12.png" />
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+								<figcaption>
+									<h2>Unicorn</h2>
+									<p>Salsify taro catsear garlic gram.</p>
+									<span>31</span>
+									<button>Add to cart</button>
+								</figcaption>
+							</figure>
+						</a>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="photo-lab">
+		<div class="tags"><p>#DOUBLE TAP</p></div>
+		<div class="photos">
+			<div class="photo">
+				<img src="img/photo1.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">26</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo2.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">8</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo3.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">34</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo4.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">11</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo5.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">50</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo">
+				<img src="img/photo6.jpg">
+				<div class="photo-hov">
+					<div class="photo-htxt">
+						<h3>Name of the dessert</h3>
+						<div>
+							<img class="like" src="img/heart.png">
+							<span class="like-count">3</span>
+							<img src="img/speech-bubble.png">
+							<span>14</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="help-conv">
+		<img src="img/conv-bubble.png">
+		<div class="chat-box">
+			<div class="chat-win">
+				<p class="QS">Davison's: How can I help?</p>
+			</div>
+			<div class="chat-user">
+				<span>Type your question:</span>
+				<input class="user-txt" type="text" name="">
+				<input class="enter" type="image" src="img/back-arrow.png" name="image" alt="submit">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-tb">
+				<div class="box1">
+					<h5>Address</h5>
+					<p>500 Terry Francois St.<br>San Francisco,<br>CA 94158</p>
+				</div>
+				<div class="box2">
+					<h5>Contact</h5>
+					<p>info@mysite.com<br>Tel: 123-456-7890</p>
+				</div>
+				<div class="box3">
+					<h5>Hours</h5>
+					<p>OPEN DAILY<br>10AM-8PM</p>
+				</div>
+				<div class="box4">
+					<h5>Mailing list</h5>
+					<form>
+						<input type="email" name="" value="Enter your email here*">
+						<button>Submit</button>
+					</form>
+				</div>
+				<div class="box5">
+					<p>Created by Victoria Momchilova</p>
+				</div>
+				<div class="box6">
+					<div class="foot-social">
+						<a href="#"><img src="img/facebook-logo-button-wh.png"></a>
+						<a href="#"><img src="img/twitter-logo-button-wh.png"></a>
+						<a href="#"><img src="img/instagram-logo-button-wh.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script src="js/shape/snap.svg-min.js"></script>
+	<script src="js/shape/hovers.js"></script>
+
+
+</body>
+</html>
